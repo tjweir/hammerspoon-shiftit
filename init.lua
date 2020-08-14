@@ -31,7 +31,9 @@ obj.mapping = {
   nextScreen = { obj.mash, 'n' },
   previousScreen = { obj.mash, 'p' },
   resizeOut = { obj.mash, '=' },
-  resizeIn = { obj.mash, '-' }
+  resizeIn = { obj.mash, '-' },
+  left30 = {obj.mash, '6' },
+  right70 = {obj.mash, '7' }
 }
 
 local units = {
@@ -46,6 +48,9 @@ local units = {
   botright50    = { x = 0.50, y = 0.50, w = 0.50, h = 0.50 },
   
   maximum       = { x = 0.00, y = 0.00, w = 1.00, h = 1.00 },
+  
+  right70       = { x = 0.70, y = 0.00, w = 0.70, h = 1.00 },
+  left30        = { x = 0.00, y = 0.00, w = 0.30, h = 1.00 },
 }
 
 function move(unit) hs.window.focusedWindow():move(unit, nil, true, 0) end
